@@ -4,7 +4,7 @@
 
 :root {
   --button-bg: #06f;
-  --button-bg-hover:  #005ce6;
+  --button-bg-hover: #005ce6;
   --button-bg-active: #004cbf;
 }
 
@@ -70,7 +70,7 @@ button {
 }
 
 .reset {
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 /* || Typography */
@@ -121,5 +121,5 @@ button:active {
     max-inline-size: 0;
     position: static;
     transform: unset;
-   }
+  }
 }

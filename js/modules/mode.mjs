@@ -6,13 +6,10 @@ export function mode() {
   let hour = time.getHours();
 
   if (hour >= 6 && hour < 18) {
-
     //Light mode
     document.body.style.backgroundColor = light;
     document.body.style.color = dark;
-  }
-  else {
-    
+  } else {
     //Dark mode
     document.body.style.backgroundColor = dark;
     document.body.style.color = light;

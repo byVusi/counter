@@ -4,7 +4,7 @@ This is a beginner's practice project to apply my knowlege of DOM manipulation u
 
 ## Need to count something?
 
-Use this counter on any device to keep count of whatever you need to in your daily life. You can increase, decrease or reset your count. 
+Use this counter on any device to keep count of whatever you need to in your daily life. You can increase, decrease or reset your count.
 
 ## Responsive design
 
@@ -18,11 +18,11 @@ Use this counter on any device to keep count of whatever you need to in your dai
 
 ## Getting started
 
-* Counter is set to zero by default. 
-* Because the idea behind the application is to count actual things, the counter does not decrease beyond zero. 
+- Counter is set to zero by default.
+- Because the idea behind the application is to count actual things, the counter does not decrease beyond zero.
 
 ## Technologies
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript

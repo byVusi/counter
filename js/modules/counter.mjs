@@ -6,7 +6,7 @@ class Counter {
     this.value++;
   }
   decreaseCount() {
-    this.value == 0 ? this.value = 0 : this.value--;
+    this.value == 0 ? (this.value = 0) : this.value--;
   }
   resetCount() {
     this.value = 0;

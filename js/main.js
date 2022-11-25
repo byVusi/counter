@@ -1,9 +1,15 @@
-import { count, subtractButton, addButton, resetButton, bottom } from "./modules/getElements.mjs";
+import {
+  count,
+  subtractButton,
+  addButton,
+  resetButton,
+  bottom,
+} from "./modules/getElements.mjs";
 import { counter } from "./modules/counter.mjs";
 import { mode } from "./modules/mode.mjs";
 
 //Print number on to page
-function  printCount() {
+function printCount() {
   count.innerText = counter.value;
 }
 
