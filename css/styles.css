@@ -1,22 +1,23 @@
+/* stylelint-disable no-duplicate-selectors */
+
 /* || General */
 
 :root {
-  --btn-primary: #0066ff;
-  --btn-hover:  #005ce6;
-  --btn-active: #004cbf;
+  --button-bg: #06f;
+  --button-bg-hover:  #005ce6;
+  --button-bg-active: #004cbf;
 }
+
 * {
-  /* Disables double tap on elements for zoom on touch devices */
-  touch-action: manipulation;
+  touch-action: manipulation; /* Disables double tap on elements for zoom on touch devices */
 }
+
 html {
   font: 62.5%/1.5 Helvetica, Arial, sans-serif;
 }
+
 body {
   font-size: 1.8rem;
-  inline-size: 100vw;
-  block-size: 100vh;
-  text-align: center;
 }
 
 /* || Layout */
@@ -26,11 +27,13 @@ main,
   display: flex;
   justify-content: center;
 }
+
 main {
   position: relative;
   flex-flow: column nowrap;
   align-items: center;
 }
+
 .buttons-container {
   position: absolute;
   bottom: 1em;
@@ -38,65 +41,85 @@ main {
   transform: translate(-50%);
 }
 
-/* || Spacing */
+button {
+  flex: 1;
+}
+
+/* || Box model */
+
+body {
+  inline-size: 100vw;
+  block-size: 100vh;
+}
 
 main {
   block-size: inherit;
 }
+
 p {
   margin: 0;
 }
+
 .buttons-container {
   inline-size: 95%;
-  max-width: 576px;
+  max-inline-size: 576px;
+}
+
+button {
+  padding: 1em 2em;
+}
+
+.reset {
+  margin: 0 .5em;
 }
 
 /* || Typography */
+
+body {
+  text-align: center;
+}
+
 h1 {
   font-size: 2.4rem;
   font-weight: 100;
 }
+
 p {
   font-size: 13.2rem;
 }
+
+button {
+  font-size: inherit;
+}
+
 .reset {
   font-weight: 900;
 }
 
-/* || CTAs */
+/* || Colour and graphics */
 
 button {
-  font-size: inherit;
+  background-color: var(--button-bg);
   color: #fefefe;
-  background-color: var(--btn-primary);
   border-radius: 5px;
   border: 0;
-  flex: 1;
-  padding: 1em 2em;
   cursor: pointer;
 }
+
 button:hover {
-  background-color: var(--btn-hover);
+  background-color: var(--button-bg-hover);
 }
+
 button:active {
-  background-color: var(--btn-active);
-}
-.reset {
-  margin: 0 .5em;
+  background-color: var(--button-bg-active);
 }
 
 /* || Media queries */
 
 @media screen and (min-width: 576px) {
   .buttons-container {
-    max-width: 0;
+    max-inline-size: 0;
     position: static;
     transform: unset;
    }
-}
- 
-@media screen and (min-width: 992px) {
-  body {
-    font-size: 1.8rem;
-  }
 }
